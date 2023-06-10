@@ -1,0 +1,14 @@
+version: "3"
+services:
+  start:
+    image: finsense-web-image
+    container_name: finsense-container
+    command: bash -c "cp -rf /app/dist /opt/dist"
+    volumes:
+      - /opt/apps/memectdup_ui/dist_new:/opt/dist
+    #    working_dir: /
+    #    ports:
+    #      - "80:80"
+    build:
+      context: .
+      dockerfile: Dockerfile

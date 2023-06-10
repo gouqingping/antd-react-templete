@@ -1,0 +1,44 @@
+.infoBox {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+
+  :global {
+    .ant-select {
+      min-width: 60px;
+    }
+  }
+
+  .projectName {
+    max-width: 153px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  :global {
+    .ant-select-arrow {
+      color: #1f2937;
+    }
+
+    .ant-select .ant-select-selector {
+      .ant-select-selection-item {
+        color: #1f2937;
+        font-weight: 500;
+      }
+
+      padding: 0 11px 0 0;
+    }
+
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.demandSelectBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 200px;
+}

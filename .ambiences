@@ -1,0 +1,22 @@
+[[dev]]
+[api]
+requestURL = ""
+[config]
+systemName = "ONLYOFFICE"
+logo = "/logo.svg"
+primaryColor = "#111"
+loginBackground = "/loginBackground.jpg"
+[theme]
+primaryColor = "#111"
+borderRadius = 20
+
+[[pro]]
+[api]
+requestURL = ""
+[config]
+systemName = "ONLYOFFICE"
+logo = "/logo.svg"
+loginBackground = "/loginBackground.jpg"
+[theme]
+primaryColor = "#111"
+borderRadius = 20

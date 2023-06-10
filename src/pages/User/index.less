@@ -1,0 +1,172 @@
+// @import (reference) '~antd/es/style/themes/index';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: auto;
+  background: #f0f2f5;
+}
+
+.lang {
+  width: 100%;
+  height: 40px;
+  line-height: 44px;
+  text-align: right;
+
+  :global(.ant-dropdown-trigger) {
+    margin-right: 24px;
+  }
+}
+
+.content {
+  flex: 1;
+  padding: 32px 0;
+}
+
+//
+.loginBox {
+  background-color: white;
+  height: calc(100vh);
+
+  .formWrap {
+    height: 117px;
+    margin-bottom: 92px;
+  }
+
+  .ant-form {
+    padding-bottom: 54px;
+  }
+
+  .logoBox {
+    position: absolute;
+    z-index: 2;
+    top: 24px;
+    left: 24px;
+    display: flex;
+    align-items: center;
+
+    .text {
+      font-family: 'PingFang SC';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      color: #1f2937;
+      padding: 16px;
+    }
+
+    img {
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  .ant-pro-form-login-page-container {
+    position: absolute;
+    width: 30%;
+    min-width: 400px;
+    left: 55%;
+    top: 50%;
+    margin-top: -225px;
+    padding: 0;
+    height: auto;
+    max-height: 100vh;
+    overflow-y: auto;
+    background: linear-gradient(135.79deg, #fafcff 39.01%, #dfe9f4 128.34%);
+    box-shadow: -16px -16px 40px rgb(255 255 255 / 80%),
+      16px 4px 64px rgb(18 61 101 / 19%),
+      inset -8px -6px 80px rgb(255 255 255 / 18%);
+    border-radius: 12px;
+    border-image-source: linear-gradient(
+      138.46deg,
+      #ffffff 48.1%,
+      #d4e0ec 77.81%
+    );
+    box-sizing: border-box;
+  }
+
+  .ant-pro-form-login-page-main {
+    width: 100%;
+    padding: 0 48px;
+  }
+
+  .ant-form-vertical {
+    .ant-btn.ant-btn-lg {
+      // background: linear-gradient(88.04deg, #86b4ff -5.9%, #3b82f6 100%);
+      // box-shadow: -6px -6px 16px rgb(255 255 255 / 60%),
+      //   6px 9px 40px rgb(59 130 246 / 44%);
+      // border-radius: 6px;
+      width: 336px;
+      height: 40px;
+      box-sizing: border-box;
+      border: none;
+    }
+  }
+
+  .ant-pro-form-login-page-top {
+    padding: 48px 48px 56px;
+    display: flex;
+
+    .titleColor {
+      font-family: 'PingFang SC';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+      color: #1f2937;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    background-image: url('https://gw.alipayobjects.com/zos/rmsportal/TVYTbAXWheQpRcWDaDMu.svg');
+    background-repeat: no-repeat;
+    background-position: center 110px;
+    background-size: 100%;
+  }
+
+  .content {
+    padding: 32px 0 24px;
+  }
+}
+
+.icon {
+  margin-left: 8px;
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: color 0.3s;
+
+  &:hover {
+    color: var(--ant-primary-color);
+  }
+}
+
+// body,html,#root{
+//   height: 100vh;
+// }
+
+@media (min-width: 800px) {
+  .loginBox {
+    .ant-pro-form-login-page {
+      position: fixed;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+@media (max-width: 799px) {
+  .ant-pro-form-login-page {
+    background-size: cover !important;
+    position: relative;
+  }
+
+  .loginBox .ant-pro-form-login-page-container {
+    right: 20%;
+    left: auto;
+  }
+}

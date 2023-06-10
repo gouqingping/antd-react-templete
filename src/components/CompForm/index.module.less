@@ -1,0 +1,14 @@
+.fromSpace {
+	width: 100%;
+
+	:global {
+		.ant-space-item {
+			flex: 1;
+
+			&:last-child,
+			&:first-child {
+				flex: none;
+			}
+		}
+	}
+}

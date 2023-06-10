@@ -1,0 +1,11 @@
+node_modules/
+public
+dist
+.vscode
+.idea
+/src/assets/iconfont/
+.husky/
+*/amb.*
+*.d.*
+.eslintrc
+.eslintrc.*

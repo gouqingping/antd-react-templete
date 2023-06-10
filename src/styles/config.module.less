@@ -1,0 +1,43 @@
+@headerHeight: 62;
+@headerHeightActual: 88;
+@operationHeight: 80;
+@tableHeight: 48;
+@tableFooter: 56;
+@defaultPadding: 16;
+
+
+@arr : @headerHeight,
+@headerHeightActual,
+@operationHeight,
+@tableHeight,
+@tableFooter,
+@defaultPadding;
+
+@keys : --header-height,
+--header-height-actual,
+--operation-height,
+--table-height,
+--table-footer,
+--default-padding;
+
+@len : length(@arr);
+
+:root {
+    .root(@index) when (@index <=@len) {
+        @name : extract(@keys, @index);
+        @value : (extract(@arr, @index) * 1px);
+        @{name}: @value;
+        .root(@index + 1);
+    }
+
+    .root(1);
+}
+
+:export {
+    headerHeight: @headerHeight;
+    headerHeightActual: @headerHeightActual;
+    operationHeight: @operationHeight;
+    tableHeight: @tableHeight;
+    tableFooter: @tableFooter;
+    defaultPadding: @defaultPadding;
+}

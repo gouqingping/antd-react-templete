@@ -1,0 +1,23 @@
+.nav-link {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--ant-primary-10);
+  padding: 5px 16px;
+  border-radius: 6px;
+}
+
+.nav-link:active {
+  background-color: var(--ant-primary-color);
+  font-weight: 500;
+  color: #fff;
+}
+
+.nav-link-active {
+  font-weight: 500;
+  background-color: var(--ant-primary-color);
+  color: #fff;
+}
+
+.nav-link-active:hover {
+  color: #fff;
+}

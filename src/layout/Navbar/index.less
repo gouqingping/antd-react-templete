@@ -1,0 +1,59 @@
+.nav {
+  height: var(--header-height);
+  box-sizing: content-box;
+  display: flex;
+  justify-content: space-between;
+
+  .content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .meun {
+    flex: 1;
+  }
+
+  .profile-block {
+    margin-left: var(--default-padding);
+    text-align: right;
+  }
+
+  .nav-logo-block {
+    height: var(--header-height);
+    line-height: var(--header-height);
+    --logo-width: calc(var(--header-height) / 2);
+
+    color: var(--ant-primary-color);
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+
+    .logo {
+      // max-width: var(--logo-width);
+      max-height: var(--logo-width);
+    }
+
+    .title {
+      padding-left: var(--default-padding);
+      width: calc(100% - (var(--sidebar-padding) + var(--logo-width)));
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      -o-text-overflow: ellipsis;
+    }
+  }
+
+  .avatar-main {
+    width: auto;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .name {
+      padding-left: var(--default-padding);
+    }
+  }
+}
